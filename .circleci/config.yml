@@ -23,8 +23,8 @@ jobs:
           command: bundle exec jekyll build
          
       - run:
-        name: Print the Current Time
-        command: date
+          name: Print the Current Time
+          command: date
         
 
 # Invoke jobs via workflows
