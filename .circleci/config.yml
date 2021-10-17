@@ -15,12 +15,15 @@ jobs:
     steps:
       - checkout
       - run:
-        name: update Jekyll
-        command: bundl exec update jekyll
+          name: update GH Pages
+          command: bundl exec update github-pages
         
       - run:
           name: build dependencies
           command: bundle exec bundle install
+      - run:
+          name: update bundle
+          command: bundle exec bundle update
           
       - run:
           name: Build the Jekyll site
