@@ -15,19 +15,19 @@ jobs:
     steps:
       - checkout
       - run:
-          name: update GH Pages
-          command: bundl exec update github-pages
+        name: update GH Pages
+        command: bundl exec update github-pages
         
       - run:
-          name: build dependencies
-          command: bundle exec bundle install
+        name: build dependencies
+        command: bundle exec bundle install
       - run:
-          name: update bundle
-          command: bundle exec bundle update
+        name: update bundle
+        command: bundle exec bundle update
           
       - run:
-          name: Build the Jekyll site
-          command: bundle exec jekyll build
+        name: Build the Jekyll site
+        command: bundle exec jekyll build
          
 #       - run:
 #           name: Print the Current Time
