@@ -15,6 +15,10 @@ jobs:
     steps:
       - checkout
       - run:
+        name: update Jekyll
+        command: bundl exec update jekyll
+        
+      - run:
           name: build dependencies
           command: bundle exec bundle install
           
