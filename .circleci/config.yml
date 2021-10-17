@@ -22,9 +22,9 @@ jobs:
           name: Build the Jekyll site
           command: bundle exec jekyll build
          
-      - run:
-          name: Print the Current Time
-          command: date
+#       - run:
+#           name: Print the Current Time
+#           command: date
         
 
 # Invoke jobs via workflows
